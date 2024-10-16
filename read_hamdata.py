@@ -289,7 +289,7 @@ class HamiltonianProcessor:
 
     def plot_bands(self, kdist, band_wanbandtb, band_structure):
         plt.figure(figsize=(10, 12))
-        plt.ylim(-10, 3)
+        plt.ylim(-12, 10)
         for i in range(self.nwan):
             plt.plot(kdist, band_wanbandtb[:, i], '-', color='red', linewidth=4)
             plt.plot(kdist, band_structure[:, i], 'o', color='blue', markersize=2)
